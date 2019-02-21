@@ -48,7 +48,18 @@
         }
     };
 
-\draw [connection]  (conv_b01_l01-east)    -- node {\midarrow} (relu_b01_l01-west);
+\pic[shift={(1,0,0)}] at (relu_b01_l01-east) 
+    {Box={
+        name=conv_b01_l02,
+        caption= ,
+        xlabel={{16, }},
+        zlabel=64,
+        fill=\ConvColor,
+        height=20.0,
+        width=5.0,
+        depth=20.0
+        }
+    };
 
 \end{tikzpicture}
 \end{document}
