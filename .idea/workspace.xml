@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="776fe343-0ed9-4619-bd19-7a1b6f20e48a" name="Default" comment="test">
+    <list default="true" id="776fe343-0ed9-4619-bd19-7a1b6f20e48a" name="Default" comment="conv block test changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/convae/conv_block.py" beforeDir="false" afterPath="$PROJECT_DIR$/convae/conv_block.py" afterDir="false" />
     </list>
@@ -13,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PlotNeuralNet$convae.coverage" NAME="convae Coverage Results" MODIFIED="1550781218482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convae" />
-    <SUITE FILE_PATH="coverage/PlotNeuralNet$conv_block.coverage" NAME="conv_block Coverage Results" MODIFIED="1550781511782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convae" />
+    <SUITE FILE_PATH="coverage/PlotNeuralNet$conv_block.coverage" NAME="conv_block Coverage Results" MODIFIED="1550781841245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convae" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/convae/conv_block.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -195,7 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536764917516</updated>
       <workItem from="1550712764694" duration="6344000" />
-      <workItem from="1550778913095" duration="1402000" />
+      <workItem from="1550778913095" duration="1723000" />
     </task>
     <task id="LOCAL-00001" summary="Keep tex file">
       <created>1550712816026</created>
@@ -281,22 +281,36 @@
       <option name="project" value="LOCAL" />
       <updated>1550781309680</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="conv block test changes">
+      <created>1550781536393</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1550781536393</updated>
+    </task>
+    <task id="LOCAL-00014" summary="conv block test changes">
+      <created>1550781661342</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1550781661342</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7746000" />
+    <option name="totallyTimeSpent" value="8067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-552" y="-1177" width="1918" height="1147" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.32985783" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.32985783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -329,7 +343,8 @@
     <MESSAGE value="Fix back graphics" />
     <MESSAGE value="test" />
     <MESSAGE value="Prototyping with a convolution block plot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prototyping with a convolution block plot" />
+    <MESSAGE value="conv block test changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="conv block test changes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tikzmake.sh">
@@ -391,7 +406,7 @@
     <entry file="file://$PROJECT_DIR$/convae/conv_block.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
