@@ -4,6 +4,8 @@
     <list default="true" id="776fe343-0ed9-4619-bd19-7a1b6f20e48a" name="Default" comment="conv block test changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/convae/conv_block.py" beforeDir="false" afterPath="$PROJECT_DIR$/convae/conv_block.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convae/conv_block.tex" beforeDir="false" afterPath="$PROJECT_DIR$/convae/conv_block.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convae/convae.tex" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,15 +15,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PlotNeuralNet$convae.coverage" NAME="convae Coverage Results" MODIFIED="1550781218482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convae" />
-    <SUITE FILE_PATH="coverage/PlotNeuralNet$conv_block.coverage" NAME="conv_block Coverage Results" MODIFIED="1550781841245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convae" />
+    <SUITE FILE_PATH="coverage/PlotNeuralNet$conv_block.coverage" NAME="conv_block Coverage Results" MODIFIED="1550784350384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convae" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/convae/convae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="13" lean-forward="true" selection-end-line="67" selection-end-column="10" />
+            <state relative-caret-position="315">
+              <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -29,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/convae/conv_block.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="570">
+              <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -195,7 +197,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536764917516</updated>
       <workItem from="1550712764694" duration="6344000" />
-      <workItem from="1550778913095" duration="1723000" />
+      <workItem from="1550778913095" duration="4038000" />
     </task>
     <task id="LOCAL-00001" summary="Keep tex file">
       <created>1550712816026</created>
@@ -295,11 +297,32 @@
       <option name="project" value="LOCAL" />
       <updated>1550781661342</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="conv block test changes">
+      <created>1550781848012</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1550781848012</updated>
+    </task>
+    <task id="LOCAL-00016" summary="conv block test changes">
+      <created>1550781947588</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1550781947588</updated>
+    </task>
+    <task id="LOCAL-00017" summary="conv block test changes">
+      <created>1550783689164</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1550783689164</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8067000" />
+    <option name="totallyTimeSpent" value="10382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-552" y="-1177" width="1918" height="1147" extended-state="0" />
@@ -398,15 +421,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/convae/convae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="true" selection-end-line="67" selection-end-column="10" />
+        <state relative-caret-position="315">
+          <caret line="21" column="89" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="95" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/convae/conv_block.tex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/convae/conv_block.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="570">
+          <caret line="44" column="30" lean-forward="true" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
         </state>
       </provider>
     </entry>

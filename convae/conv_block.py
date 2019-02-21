@@ -10,6 +10,7 @@ from core.blocks import *
 # Block 01
 ## Conv 01
 conv_b01_l01_side = 128
+scaling_factor = 40*conv_b01_l01_side
 conv_b01_l01_params = 16
 
 ## Leaky ReLU
@@ -41,7 +42,8 @@ arch = [
 
     # Define a convolution block
 
-    to_Conv('b01l01', s_filer=conv_b01_l01_side , n_filer=conv_b01_l01_params, width=conv_b01_l01_params, height=conv_b01_l01_side, depth=conv_b01_l01_side),
+    to_Conv('b01l01', s_filer=conv_b01_l01_side, n_filer=conv_b01_l01_params,
+            width=(conv_b01_l01_params*scaling_factor), height=(conv_b01_l01_side*scaling_factor), depth=(conv_b01_l01_side*scaling_factor), offset="(0,0,0)", to="(0,0,0)"),
 
     to_end()
 ]
