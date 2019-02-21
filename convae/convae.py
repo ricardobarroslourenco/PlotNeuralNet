@@ -10,7 +10,8 @@ arch = [
     to_begin(),
 
     # input
-    to_input('../examples/fcn8s/cats.jpg'),
+    # to_input('../examples/fcn8s/cats.jpg'),
+    to_input('./coast_of_chile_high_res.png'),
 
     # block-001
     to_ConvConvRelu(name='ccr_b1', s_filer=500, n_filer=(64, 64), offset="(0,0,0)", to="(0,0,0)", width=(2, 2),
