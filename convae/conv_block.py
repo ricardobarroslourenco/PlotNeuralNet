@@ -10,7 +10,7 @@ from core.blocks import *
 # Block 01
 ## Conv 01
 conv_b01_l01_side = 128
-scaling_factor = 40/conv_b01_l01_side
+scaling_factor = 20/conv_b01_l01_side
 conv_b01_l01_params = 16
 
 ## Leaky ReLU
