@@ -4,6 +4,33 @@ sys.path.append('../')
 from core.tikzeng import *
 from core.blocks import *
 
+
+###### Param list
+
+# Block 01
+## Conv 01
+conv_b01_l01_side = 128
+conv_b01_l01_params = 16
+
+## Leaky ReLU
+relu_b01_l01_side = 128
+relu_b01_l01_params = 16
+
+## Conv02
+conv_b01_l02_side = 64
+conv_b01_l02_params = 16
+
+## Leaky ReLU
+relu_b01_l02_side = 64
+relu_b01_l02_params = 16
+
+## Conv03
+conv_b01_l02_side = 64
+conv_b01_l02_params = 16
+
+
+
+###### Architecture with param list
 arch = [
     to_head('..'),
     to_cor(),
@@ -13,7 +40,8 @@ arch = [
     to_input('./coast_of_chile_high_res.png'),
 
     # Define a convolution block
-    to_Conv('conv01', s_filer= -200 , width=(2,2), height=40, depth=40, ),
+
+    to_Conv('b01l01', s_filer=conv_b01_l01_side , n_filer=conv_b01_l01_params, width=conv_b01_l01_params, height=conv_b01_l01_side, depth=conv_b01_l01_side),
 
     to_end()
 ]
