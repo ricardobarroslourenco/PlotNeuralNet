@@ -15,7 +15,7 @@ arch = [
     # Encoder
     # to_ConvConvRelu(name='ccr_b1', s_filer=500, n_filer=(64, 64), offset="(0,0,0)", to="(0,0,0)", width=(2, 2),
     #                 height=40, depth=40),
-    to_Conv(name='testconv', s_filer=500, n_filer=64, offset="(0,0,0)", to="(0,0,0)", width=(2,2), height=50, depth=50),
+    to_Conv(name='testconv', s_filer=500, n_filer=64, offset="(0,0,0)", to="(0,0,0)", width=(2,2), height=50, depth=50, caption="TESTE"),
 
 
 
