@@ -43,10 +43,10 @@ arch = [
     # Define a convolution block b01
     # Conv01
     to_Conv('conv_b01_l01', s_filer=conv_b01_l01_side, n_filer=conv_b01_l01_params,
-            width=(conv_b01_l01_params*scaling_factor), height=(conv_b01_l01_side*scaling_factor), depth=(conv_b01_l01_side*scaling_factor), offset="(0,0,0)", to="(0,0,0)", caption='conv_b01_l01'),
+            width=(conv_b01_l01_params*scaling_factor), height=(conv_b01_l01_side*scaling_factor), depth=(conv_b01_l01_side*scaling_factor), offset="(0,0,0)", to="(0,0,0)"),
     # Relu01
-    to_Conv('relu_b01_l01', s_filer=relu_b01_l01_side, n_filer=relu_b01_l01_params,
-            width=(relu_b01_l01_params*scaling_factor), height=(relu_b01_l01_side*scaling_factor), depth=(relu_b01_l01_side*scaling_factor), offset="(0,0,0)", to="(conv_b01_l01-east)", caption='relu_b01_l01'),
+    to_Relu('relu_b01_l01', s_filer=relu_b01_l01_side, n_filer=relu_b01_l01_params,
+            width=(relu_b01_l01_params*scaling_factor), height=(relu_b01_l01_side*scaling_factor), depth=(relu_b01_l01_side*scaling_factor), offset="(0,0,0)", to="(conv_b01_l01-east)"),
     to_end()
 ]
 
