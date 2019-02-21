@@ -26,8 +26,8 @@ relu_b01_l02_side = 64
 relu_b01_l02_params = 16
 
 ## Conv03
-conv_b01_l02_side = 64
-conv_b01_l02_params = 16
+conv_b01_l03_side = 64
+conv_b01_l03_params = 16
 
 
 
@@ -50,10 +50,13 @@ arch = [
     # Conv02
     to_Conv('conv_b01_l02', s_filer=conv_b01_l02_side, n_filer=conv_b01_l02_params,
             width=(conv_b01_l02_params*scaling_factor), height=(conv_b01_l02_side*scaling_factor), depth=(conv_b01_l02_side*scaling_factor), offset="(1,0,0)", to="(relu_b01_l01-east)"),
-
-
-
-    # to_connection('conv_b01_l01','relu_b01_l01'),
+    # Relu02
+    to_Relu('relu_b01_l02', s_filer=relu_b01_l02_side, n_filer=relu_b01_l02_params,
+            width=(relu_b01_l02_params*scaling_factor), height=(relu_b01_l02_side*scaling_factor), depth=(relu_b01_l02_side*scaling_factor), offset="(1,0,0)", to="(conv_b01_l02-east)"),
+    # Conv03
+    to_Conv('conv_b01_l03', s_filer=conv_b01_l03_side, n_filer=conv_b01_l03_params,
+            width=(conv_b01_l03_params*scaling_factor), height=(conv_b01_l03_side*scaling_factor), depth=(conv_b01_l03_side*scaling_factor), offset="(1,0,0)", to="(relu_b01_l02-east)"),
+    to_skip( of='conv_b01_l01', to='conv_b01_l03', pos=1.25),
     to_end()
 ]
 

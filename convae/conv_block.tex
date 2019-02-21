@@ -61,5 +61,38 @@
         }
     };
 
+\pic[shift={(1,0,0)}] at (conv_b01_l02-east) 
+    {Box={
+        name=relu_b01_l02,
+        caption= ,
+        xlabel={{16, }},
+        zlabel=64,
+        fill=\ConvReluColor,
+        height=20.0,
+        width=5.0,
+        depth=20.0
+        }
+    };
+
+\pic[shift={(1,0,0)}] at (relu_b01_l02-east) 
+    {Box={
+        name=conv_b01_l03,
+        caption= ,
+        xlabel={{16, }},
+        zlabel=64,
+        fill=\ConvColor,
+        height=20.0,
+        width=5.0,
+        depth=20.0
+        }
+    };
+
+\path (conv_b01_l01-southeast) -- (conv_b01_l01-northeast) coordinate[pos=1.25] (conv_b01_l01-top) ;
+\path (conv_b01_l03-south)  -- (conv_b01_l03-north)  coordinate[pos=1.25] (conv_b01_l03-top) ;
+\draw [copyconnection]  (conv_b01_l01-northeast)  
+-- node {\copymidarrow}(conv_b01_l01-top)
+-- node {\copymidarrow}(conv_b01_l03-top)
+-- node {\copymidarrow} (conv_b01_l03-north);
+
 \end{tikzpicture}
 \end{document}
