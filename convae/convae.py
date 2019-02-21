@@ -15,7 +15,7 @@ arch = [
     # Encoder
     # to_ConvConvRelu(name='ccr_b1', s_filer=500, n_filer=(64, 64), offset="(0,0,0)", to="(0,0,0)", width=(2, 2),
     #                 height=40, depth=40),
-    to_ConvConvRelu(name='ccr_b1', s_filer=500, n_filer=(64), offset="(0,0,0)", to="(0,0,0)", width=(2),
+    to_ConvConvRelu(name='ccr_b1', s_filer=500, n_filer=(64,64), offset="(0,0,0)", to="(0,0,0)", width=(2,2),
                     height=40, depth=40),
     to_Pool(name="pool_b1", offset="(0,0,0)", to="(ccr_b1-east)", width=1, height=32, depth=32, opacity=0.5),
 
