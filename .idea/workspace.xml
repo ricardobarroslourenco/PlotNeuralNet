@@ -14,15 +14,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PlotNeuralNet$convae.coverage" NAME="convae Coverage Results" MODIFIED="1550781218482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convae" />
-    <SUITE FILE_PATH="coverage/PlotNeuralNet$conv_block.coverage" NAME="conv_block Coverage Results" MODIFIED="1550785244050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convae" />
+    <SUITE FILE_PATH="coverage/PlotNeuralNet$conv_block.coverage" NAME="conv_block Coverage Results" MODIFIED="1550788160283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/convae" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/convae/convae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="148">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/convae/conv_block.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="47" column="178" selection-start-line="47" selection-start-column="178" selection-end-line="47" selection-end-column="178" />
+            <state relative-caret-position="542">
+              <caret line="48" column="151" selection-start-line="48" selection-start-column="151" selection-end-line="48" selection-end-column="151" />
             </state>
           </provider>
         </entry>
@@ -39,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/tikzeng.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+            <state relative-caret-position="1020">
+              <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -57,6 +57,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>'ccr_b1'</find>
+      <find>(ccr_b1-east)</find>
+      <find>ccr_b1-east</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,7 +208,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536764917516</updated>
       <workItem from="1550712764694" duration="6344000" />
-      <workItem from="1550778913095" duration="4926000" />
+      <workItem from="1550778913095" duration="7163000" />
     </task>
     <task id="LOCAL-00001" summary="Keep tex file">
       <created>1550712816026</created>
@@ -362,11 +364,53 @@
       <option name="project" value="LOCAL" />
       <updated>1550785041244</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="conv block test changes">
+      <created>1550785252988</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1550785252988</updated>
+    </task>
+    <task id="LOCAL-00024" summary="conv block test changes">
+      <created>1550785700467</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1550785700467</updated>
+    </task>
+    <task id="LOCAL-00025" summary="conv block test changes">
+      <created>1550785897015</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1550785897015</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add relu block">
+      <created>1550786264029</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1550786264030</updated>
+    </task>
+    <task id="LOCAL-00027" summary="conv block test changes">
+      <created>1550786320817</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1550786320817</updated>
+    </task>
+    <task id="LOCAL-00028" summary="conv block test changes">
+      <created>1550787244968</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1550787244970</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11270000" />
+    <option name="totallyTimeSpent" value="13507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-552" y="-1177" width="1918" height="1147" extended-state="0" />
@@ -377,14 +421,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.32985783" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.32985783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32985783" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.18293838" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.32985783" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021322" side_tool="true" visible="true" weight="0.32985783" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -411,6 +455,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="Prototyping with a convolution block plot" />
     <MESSAGE value="add ConvRelu (single) representation" />
+    <MESSAGE value="Add relu block" />
     <MESSAGE value="conv block test changes" />
     <option name="LAST_COMMIT_MESSAGE" value="conv block test changes" />
   </component>
@@ -462,22 +507,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/tikzeng.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/convae/convae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="148">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/convae/conv_block.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="47" column="178" selection-start-line="47" selection-start-column="178" selection-end-line="47" selection-end-column="178" />
+        <state relative-caret-position="542">
+          <caret line="48" column="151" selection-start-line="48" selection-start-column="151" selection-end-line="48" selection-end-column="151" />
         </state>
       </provider>
     </entry>
