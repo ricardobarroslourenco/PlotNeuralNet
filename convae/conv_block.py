@@ -13,7 +13,7 @@ arch = [
     to_input('./coast_of_chile_high_res.png'),
 
     # Define a convolution block
-    to_Conv('conv01',width=40, height=40, depth=1),
+    to_Conv('conv01',width=1, height=40, depth=40),
 
     to_end()
 ]
