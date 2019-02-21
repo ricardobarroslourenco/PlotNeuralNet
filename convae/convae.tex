@@ -22,23 +22,23 @@
 
 \node[canvas is zy plane at x=0] (temp) at (-3,0,0) {\includegraphics[width=8cm,height=8cm]{./coast_of_chile_high_res.png}};
 
-\pic[shift={(0,0,0)}] at (0,0,0) 
-    {Box={
-        name=testconv,
-        caption=TESTE,
-        xlabel={{64, }},
-        zlabel=500,
-        fill=\ConvColor,
-        height=50,
-        width=(2, 2),
-        depth=50
-        }
-    };
+% \pic[shift={(0,0,0)}] at (0,0,0) 
+%     {Box={
+%         name=testconv,
+%         caption=TESTE,
+%         xlabel={{64, }},
+%         zlabel=500,
+%         fill=\ConvColor,
+%         height=50,
+%         width=(2, 2),
+%         depth=50
+%         }
+%     };
 
 \pic[shift={ (0,0,0) }] at (0,0,0) 
     {RightBandedBox={
         name=ccr_b1,
-        caption= ,
+        caption=,
         xlabel={{ 64, 64 }},
         zlabel=500,
         fill=\ConvColor,
