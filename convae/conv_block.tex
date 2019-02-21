@@ -22,6 +22,20 @@
 
 \node[canvas is zy plane at x=0] (temp) at (-3,0,0) {\includegraphics[width=8cm,height=8cm]{./coast_of_chile_high_res.png}};
 
+\pic[shift={ (0,0,0) }] at (0,0,0) 
+    {Box={
+        name=bconvrelu,
+        caption= ,
+        xlabel={{ 16}},
+        zlabel=128,
+        fill=\ConvColor,
+        bandfill=\ConvReluColor,
+        height=40.0,
+        width={ 5.0},
+        depth=40.0
+        }
+    };
+
 \pic[shift={(0,0,0)}] at (0,0,0) 
     {Box={
         name=b01l01,
@@ -29,9 +43,9 @@
         xlabel={{16, }},
         zlabel=128,
         fill=\ConvColor,
-        height=20.0,
-        width=2.5,
-        depth=20.0
+        height=40.0,
+        width=5.0,
+        depth=40.0
         }
     };
 
