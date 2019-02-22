@@ -4,58 +4,306 @@ sys.path.append('../')
 from core.tikzeng import *
 from core.blocks import *
 
+
+###### Param list ######################################################################################################
+
+# Block 01 -------------------------------------------------------------------------------------------------------------
+## Conv 01
+conv_b01_l01_side = 128
+scaling_factor_b1 = 40/conv_b01_l01_side
+conv_b01_l01_params = 16
+
+## Leaky ReLU
+relu_b01_l01_side = 128
+relu_b01_l01_params = 16
+
+## Conv02
+conv_b01_l02_side = 64
+conv_b01_l02_params = 16
+
+## Leaky ReLU
+relu_b01_l02_side = 64
+relu_b01_l02_params = 16
+
+## Conv03
+conv_b01_l03_side = 64
+conv_b01_l03_params = 16
+
+# Block 02 -------------------------------------------------------------------------------------------------------------
+## Conv 01
+conv_b02_l01_side = 128
+scaling_factor_b2 = 40/conv_b02_l01_side
+conv_b02_l01_params = 16
+
+## Leaky ReLU
+relu_b02_l01_side = 128
+relu_b02_l01_params = 16
+
+## Conv02
+conv_b02_l02_side = 64
+conv_b02_l02_params = 16
+
+## Leaky ReLU
+relu_b02_l02_side = 64
+relu_b02_l02_params = 16
+
+## Conv03
+conv_b02_l03_side = 64
+conv_b02_l03_params = 16
+
+
+# Block 03 -------------------------------------------------------------------------------------------------------------
+## Conv 01
+conv_b03_l01_side = 128
+scaling_factor_b3 = 40/conv_b03_l01_side
+conv_b03_l01_params = 16
+
+## Leaky ReLU
+relu_b03_l01_side = 128
+relu_b03_l01_params = 16
+
+## Conv02
+conv_b03_l02_side = 64
+conv_b03_l02_params = 16
+
+## Leaky ReLU
+relu_b03_l02_side = 64
+relu_b03_l02_params = 16
+
+## Conv03
+conv_b03_l03_side = 64
+conv_b03_l03_params = 16
+
+
+# Block 04 -------------------------------------------------------------------------------------------------------------
+## Conv 01
+conv_b04_l01_side = 128
+scaling_factor_b4 = 40/conv_b04_l01_side
+conv_b04_l01_params = 16
+
+## Leaky ReLU
+relu_b04_l01_side = 128
+relu_b04_l01_params = 16
+
+## Conv02
+conv_b04_l02_side = 64
+conv_b04_l02_params = 16
+
+## Leaky ReLU
+relu_b04_l02_side = 64
+relu_b04_l02_params = 16
+
+## Conv03
+conv_b04_l03_side = 64
+conv_b04_l03_params = 16
+
+#=======================================================================================================================
+## Latent Space
+
+
+#=======================================================================================================================
+# Block 05 -------------------------------------------------------------------------------------------------------------
+## DeConv 01
+deconv_b05_l01_side = 128
+scaling_factor_b1 = 40/deconv_b01_l01_side
+conv_b01_l01_params = 16
+
+## Leaky ReLU
+relu_b01_l01_side = 128
+relu_b01_l01_params = 16
+
+## DeConv02
+conv_b01_l02_side = 64
+conv_b01_l02_params = 16
+
+## Leaky ReLU
+relu_b01_l02_side = 64
+relu_b01_l02_params = 16
+
+## DeConv03
+conv_b01_l03_side = 64
+conv_b01_l03_params = 16
+
+# Block 06 -------------------------------------------------------------------------------------------------------------
+## DeConv 01
+conv_b01_l01_side = 128
+scaling_factor_b2 = 40/conv_b01_l01_side
+conv_b01_l01_params = 16
+
+## Leaky ReLU
+relu_b01_l01_side = 128
+relu_b01_l01_params = 16
+
+## DeConv02
+conv_b01_l02_side = 64
+conv_b01_l02_params = 16
+
+## Leaky ReLU
+relu_b01_l02_side = 64
+relu_b01_l02_params = 16
+
+## DeConv03
+conv_b01_l03_side = 64
+conv_b01_l03_params = 16
+
+
+# Block 07 -------------------------------------------------------------------------------------------------------------
+## DeConv 01
+conv_b01_l01_side = 128
+scaling_factor_b3 = 40/conv_b01_l01_side
+conv_b01_l01_params = 16
+
+## Leaky ReLU
+relu_b01_l01_side = 128
+relu_b01_l01_params = 16
+
+## DeConv02
+conv_b01_l02_side = 64
+conv_b01_l02_params = 16
+
+## Leaky ReLU
+relu_b01_l02_side = 64
+relu_b01_l02_params = 16
+
+## DeConv03
+conv_b01_l03_side = 64
+conv_b01_l03_params = 16
+
+
+# Block 08 -------------------------------------------------------------------------------------------------------------
+## DeConv 01
+conv_b04_l01_side = 128
+scaling_factor_b4 = 40/conv_b01_l01_side
+conv_b04_l01_params = 16
+
+## Leaky ReLU
+relu_b04_l01_side = 128
+relu_b04_l01_params = 16
+
+## DeConv02
+conv_b04_l02_side = 64
+conv_b04_l02_params = 16
+
+## Leaky ReLU
+relu_b04_l02_side = 64
+relu_b04_l02_params = 16
+
+## DeConv03
+conv_b04_l03_side = 64
+conv_b04_l03_params = 16
+
+
+
+
+
+
+###### Architecture with param list
 arch = [
     to_head('..'),
     to_cor(),
     to_begin(),
 
-    # input
+    # input image
     to_input('./coast_of_chile_high_res.png'),
 
-    # Encoder
-    # to_ConvConvRelu(name='ccr_b1', s_filer=500, n_filer=(64, 64), offset="(0,0,0)", to="(0,0,0)", width=(2, 2),
-    #                 height=40, depth=40),
-    to_Conv(name='testconv', s_filer=500, n_filer=64, offset="(0,0,0)", to="(0,0,0)", width=(2,2), height=50, depth=50, caption="TESTE"),
+    # Define a convolution block b01 ##################################################################################
+    # Conv01
+    to_Conv('conv_b01_l01', s_filer=conv_b01_l01_side, n_filer=conv_b01_l01_params,
+            width=(conv_b01_l01_params*scaling_factor), height=(conv_b01_l01_side*scaling_factor),
+            depth=(conv_b01_l01_side*scaling_factor), offset="(0,0,0)", to="(0,0,0)"),
+    # Relu01
+    to_Relu('relu_b01_l01', s_filer=relu_b01_l01_side, n_filer=relu_b01_l01_params,
+            width=(relu_b01_l01_params*scaling_factor), height=(relu_b01_l01_side*scaling_factor),
+            depth=(relu_b01_l01_side*scaling_factor), offset="(1,0,0)", to="(conv_b01_l01-east)"),
+    # Conv02
+    to_Conv('conv_b01_l02', s_filer=conv_b01_l02_side, n_filer=conv_b01_l02_params,
+            width=(conv_b01_l02_params*scaling_factor), height=(conv_b01_l02_side*scaling_factor),
+            depth=(conv_b01_l02_side*scaling_factor), offset="(1,0,0)", to="(relu_b01_l01-east)"),
+    # Relu02
+    to_Relu('relu_b01_l02', s_filer=relu_b01_l02_side, n_filer=relu_b01_l02_params,
+            width=(relu_b01_l02_params*scaling_factor), height=(relu_b01_l02_side*scaling_factor),
+            depth=(relu_b01_l02_side*scaling_factor), offset="(1,0,0)", to="(conv_b01_l02-east)"),
+    # Conv03
+    to_Conv('conv_b01_l03', s_filer=conv_b01_l03_side, n_filer=conv_b01_l03_params,
+            width=(conv_b01_l03_params*scaling_factor), height=(conv_b01_l03_side*scaling_factor),
+            depth=(conv_b01_l03_side*scaling_factor), offset="(1,0,0)", to="(relu_b01_l02-east)"),
+    to_skip( of='conv_b01_l01', to='conv_b01_l03', pos=1.25),
 
+    # Define a convolution block b02 ##################################################################################
+    # Conv01
+    to_Conv('conv_b01_l01', s_filer=conv_b01_l01_side, n_filer=conv_b01_l01_params,
+            width=(conv_b01_l01_params * scaling_factor), height=(conv_b01_l01_side * scaling_factor),
+            depth=(conv_b01_l01_side * scaling_factor), offset="(0,0,0)", to="(0,0,0)"),
+    # Relu01
+    to_Relu('relu_b01_l01', s_filer=relu_b01_l01_side, n_filer=relu_b01_l01_params,
+            width=(relu_b01_l01_params * scaling_factor), height=(relu_b01_l01_side * scaling_factor),
+            depth=(relu_b01_l01_side * scaling_factor), offset="(1,0,0)", to="(conv_b01_l01-east)"),
+    # Conv02
+    to_Conv('conv_b01_l02', s_filer=conv_b01_l02_side, n_filer=conv_b01_l02_params,
+            width=(conv_b01_l02_params * scaling_factor), height=(conv_b01_l02_side * scaling_factor),
+            depth=(conv_b01_l02_side * scaling_factor), offset="(1,0,0)", to="(relu_b01_l01-east)"),
+    # Relu02
+    to_Relu('relu_b01_l02', s_filer=relu_b01_l02_side, n_filer=relu_b01_l02_params,
+            width=(relu_b01_l02_params * scaling_factor), height=(relu_b01_l02_side * scaling_factor),
+            depth=(relu_b01_l02_side * scaling_factor), offset="(1,0,0)", to="(conv_b01_l02-east)"),
+    # Conv03
+    to_Conv('conv_b01_l03', s_filer=conv_b01_l03_side, n_filer=conv_b01_l03_params,
+            width=(conv_b01_l03_params * scaling_factor), height=(conv_b01_l03_side * scaling_factor),
+            depth=(conv_b01_l03_side * scaling_factor), offset="(1,0,0)", to="(relu_b01_l02-east)"),
+    to_skip(of='conv_b01_l01', to='conv_b01_l03', pos=1.25),
 
+    # Define a convolution block b03 ##################################################################################
+    # Conv01
+    to_Conv('conv_b01_l01', s_filer=conv_b01_l01_side, n_filer=conv_b01_l01_params,
+            width=(conv_b01_l01_params * scaling_factor), height=(conv_b01_l01_side * scaling_factor),
+            depth=(conv_b01_l01_side * scaling_factor), offset="(0,0,0)", to="(0,0,0)"),
+    # Relu01
+    to_Relu('relu_b01_l01', s_filer=relu_b01_l01_side, n_filer=relu_b01_l01_params,
+            width=(relu_b01_l01_params * scaling_factor), height=(relu_b01_l01_side * scaling_factor),
+            depth=(relu_b01_l01_side * scaling_factor), offset="(1,0,0)", to="(conv_b01_l01-east)"),
+    # Conv02
+    to_Conv('conv_b01_l02', s_filer=conv_b01_l02_side, n_filer=conv_b01_l02_params,
+            width=(conv_b01_l02_params * scaling_factor), height=(conv_b01_l02_side * scaling_factor),
+            depth=(conv_b01_l02_side * scaling_factor), offset="(1,0,0)", to="(relu_b01_l01-east)"),
+    # Relu02
+    to_Relu('relu_b01_l02', s_filer=relu_b01_l02_side, n_filer=relu_b01_l02_params,
+            width=(relu_b01_l02_params * scaling_factor), height=(relu_b01_l02_side * scaling_factor),
+            depth=(relu_b01_l02_side * scaling_factor), offset="(1,0,0)", to="(conv_b01_l02-east)"),
+    # Conv03
+    to_Conv('conv_b01_l03', s_filer=conv_b01_l03_side, n_filer=conv_b01_l03_params,
+            width=(conv_b01_l03_params * scaling_factor), height=(conv_b01_l03_side * scaling_factor),
+            depth=(conv_b01_l03_side * scaling_factor), offset="(1,0,0)", to="(relu_b01_l02-east)"),
+    to_skip(of='conv_b01_l01', to='conv_b01_l03', pos=1.25),
 
-    to_ConvConvRelu(name='ccr_b1', s_filer=500, n_filer=(64,64), offset="(0,0,0)", to="(0,0,0)", width=(2,2),
-                    height=40, depth=40),
-    to_Pool(name="pool_b1", offset="(0,0,0)", to="(ccr_b1-east)", width=1, height=32, depth=32, opacity=0.5),
+    # Define a convolution block b04 ##################################################################################
+    # Conv01
+    to_Conv('conv_b01_l01', s_filer=conv_b01_l01_side, n_filer=conv_b01_l01_params,
+            width=(conv_b01_l01_params * scaling_factor), height=(conv_b01_l01_side * scaling_factor),
+            depth=(conv_b01_l01_side * scaling_factor), offset="(0,0,0)", to="(0,0,0)"),
+    # Relu01
+    to_Relu('relu_b01_l01', s_filer=relu_b01_l01_side, n_filer=relu_b01_l01_params,
+            width=(relu_b01_l01_params * scaling_factor), height=(relu_b01_l01_side * scaling_factor),
+            depth=(relu_b01_l01_side * scaling_factor), offset="(1,0,0)", to="(conv_b01_l01-east)"),
+    # Conv02
+    to_Conv('conv_b01_l02', s_filer=conv_b01_l02_side, n_filer=conv_b01_l02_params,
+            width=(conv_b01_l02_params * scaling_factor), height=(conv_b01_l02_side * scaling_factor),
+            depth=(conv_b01_l02_side * scaling_factor), offset="(1,0,0)", to="(relu_b01_l01-east)"),
+    # Relu02
+    to_Relu('relu_b01_l02', s_filer=relu_b01_l02_side, n_filer=relu_b01_l02_params,
+            width=(relu_b01_l02_params * scaling_factor), height=(relu_b01_l02_side * scaling_factor),
+            depth=(relu_b01_l02_side * scaling_factor), offset="(1,0,0)", to="(conv_b01_l02-east)"),
+    # Conv03
+    to_Conv('conv_b01_l03', s_filer=conv_b01_l03_side, n_filer=conv_b01_l03_params,
+            width=(conv_b01_l03_params * scaling_factor), height=(conv_b01_l03_side * scaling_factor),
+            depth=(conv_b01_l03_side * scaling_factor), offset="(1,0,0)", to="(relu_b01_l02-east)"),
+    to_skip(of='conv_b01_l01', to='conv_b01_l03', pos=1.25),
 
-    *block_2ConvPool(name='b2', botton='pool_b1', top='pool_b2', s_filer=256, n_filer=128, offset="(1,0,0)",
-                     size=(32, 32, 3.5), opacity=0.5),
-    *block_2ConvPool(name='b3', botton='pool_b2', top='pool_b3', s_filer=128, n_filer=256, offset="(1,0,0)",
-                     size=(25, 25, 4.5), opacity=0.5),
-    *block_2ConvPool(name='b4', botton='pool_b3', top='pool_b4', s_filer=64, n_filer=512, offset="(1,0,0)",
-                     size=(16, 16, 5.5), opacity=0.5),
-
-    # Bottleneck
-    # block-005
-    to_ConvConvRelu(name='ccr_b5', s_filer=32, n_filer=(1024, 1024), offset="(2,0,0)", to="(pool_b4-east)",
-                    width=(8, 8), height=8, depth=8, caption="Bottleneck"),
-    to_connection("pool_b4", "ccr_b5"),
-    #
-    # # Decoder
-    # *block_Unconv(name="b6", botton="ccr_b5", top='end_b6', s_filer=64, n_filer=512, offset="(2.1,0,0)",
-    #               size=(16, 16, 5.0), opacity=0.5),
-    # to_skip(of='ccr_b4', to='ccr_res_b6', pos=1.25),
-    # *block_Unconv(name="b7", botton="end_b6", top='end_b7', s_filer=128, n_filer=256, offset="(2.1,0,0)",
-    #               size=(25, 25, 4.5), opacity=0.5),
-    # to_skip(of='ccr_b3', to='ccr_res_b7', pos=1.25),
-    # *block_Unconv(name="b8", botton="end_b7", top='end_b8', s_filer=256, n_filer=128, offset="(2.1,0,0)",
-    #               size=(32, 32, 3.5), opacity=0.5),
-    # to_skip(of='ccr_b2', to='ccr_res_b8', pos=1.25),
-    #
-    # *block_Unconv(name="b9", botton="end_b8", top='end_b9', s_filer=512, n_filer=64, offset="(2.1,0,0)",
-    #               size=(40, 40, 2.5), opacity=0.5),
-    # to_skip(of='ccr_b1', to='ccr_res_b9', pos=1.25),
-    #
-    # to_ConvSoftMax(name="soft1", s_filer=512, offset="(0.75,0,0)", to="(end_b9-east)", width=1, height=40, depth=40,
-    #                caption="SOFT"),
-    # to_connection("end_b9", "soft1"),
 
     to_end()
+
+
+
+
 ]
 
 
