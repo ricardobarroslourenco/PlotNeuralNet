@@ -234,7 +234,7 @@ arch = [
     # Conv01
     to_Conv('conv_b02_l01', s_filer=conv_b02_l01_side, n_filer=conv_b02_l01_params,
             width=(conv_b02_l01_params * scaling_factor_b2), height=(conv_b02_l01_side * scaling_factor_b2),
-            depth=(conv_b02_l01_side * scaling_factor_b2), offset="(0,0,0)", to="(0,0,0)"),
+            depth=(conv_b02_l01_side * scaling_factor_b2), offset="(2,0,0)", to="(conv_b01_l03)"),
     # Relu01
     to_Relu('relu_b02_l01', s_filer=relu_b02_l01_side, n_filer=relu_b02_l01_params,
             width=(relu_b02_l01_params * scaling_factor_b2), height=(relu_b02_l01_side * scaling_factor_b2),
