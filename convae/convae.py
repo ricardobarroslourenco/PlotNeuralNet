@@ -31,25 +31,25 @@ conv_b01_l03_params = 16
 
 # Block 02 -------------------------------------------------------------------------------------------------------------
 ## Conv 01
-conv_b02_l01_side = 128
+conv_b02_l01_side = 64
 scaling_factor_b2 = 40/conv_b02_l01_side
 conv_b02_l01_params = 16
 
 ## Leaky ReLU
-relu_b02_l01_side = 128
+relu_b02_l01_side = 64
 relu_b02_l01_params = 16
 
 ## Conv02
-conv_b02_l02_side = 64
-conv_b02_l02_params = 16
+conv_b02_l02_side = 32
+conv_b02_l02_params = 32
 
 ## Leaky ReLU
-relu_b02_l02_side = 64
-relu_b02_l02_params = 16
+relu_b02_l02_side = 32
+relu_b02_l02_params = 32
 
 ## Conv03
-conv_b02_l03_side = 64
-conv_b02_l03_params = 16
+conv_b02_l03_side = 32
+conv_b02_l03_params = 32
 
 
 # Block 03 -------------------------------------------------------------------------------------------------------------
